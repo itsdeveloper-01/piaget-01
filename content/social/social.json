@@ -1,0 +1,41 @@
+{
+  "accounts": [
+    {
+      "platform": "Facebook",
+      "handle": "piaget.montessori",
+      "url": "https://facebook.com"
+    },
+    {
+      "platform": "Instagram",
+      "handle": "piaget.montessori",
+      "url": "https://instagram.com"
+    },
+    {
+      "platform": "X",
+      "handle": "piaget_mty",
+      "url": "https://x.com"
+    },
+    {
+      "platform": "YouTube",
+      "handle": "piaget_tv",
+      "url": "https://youtube.com"
+    }
+  ],
+  "recent": [
+    {
+      "image": "/assets/social/demo1.jpg",
+      "text": "Bienvenidos al ciclo escolar 🎒✨",
+      "link": "https://instagram.com"
+    },
+    {
+      "image": "/assets/social/demo2.jpg",
+      "text": "Taller de robótica en acción 🤖",
+      "link": "https://facebook.com"
+    },
+    {
+      "image": "/assets/social/demo3.jpg",
+      "text": "Música y movimiento 🎶",
+      "link": "https://x.com"
+    }
+  ]
+}

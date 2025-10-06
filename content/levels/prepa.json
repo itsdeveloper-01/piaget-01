@@ -1,0 +1,22 @@
+{
+  "title": "Preparatoria",
+  "heroImage": "/assets/levels/prepa.jpg",
+  "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Integer vitae libero ac risus egestas placerat.",
+  "activities": [
+    {
+      "title": "Actividad 1",
+      "summary": "Lorem ipsum dolor sit amet.",
+      "image": "/assets/activities/musica.jpg"
+    },
+    {
+      "title": "Actividad 2",
+      "summary": "Consectetur adipiscing elit.",
+      "image": "/assets/activities/robotica.jpg"
+    },
+    {
+      "title": "Actividad 3",
+      "summary": "Sed do eiusmod tempor.",
+      "image": "/assets/activities/deportes.jpg"
+    }
+  ]
+}

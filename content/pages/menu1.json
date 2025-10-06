@@ -1,0 +1,17 @@
+{
+  "title": "Lenguajes",
+  "sections": [
+    {
+      "heading": "Sección 1",
+      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere."
+    },
+    {
+      "heading": "Sección 2",
+      "body": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+    },
+    {
+      "heading": "Sección 3",
+      "body": "Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur."
+    }
+  ]
+}

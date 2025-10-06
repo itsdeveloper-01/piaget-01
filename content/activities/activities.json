@@ -1,0 +1,22 @@
+{
+  "activities": [
+    {
+      "slug": "musica",
+      "title": "Música",
+      "summary": "Desarrollo rítmico y expresión artística.",
+      "image": "/assets/activities/musica.jpg"
+    },
+    {
+      "slug": "robotica",
+      "title": "Robótica",
+      "summary": "Pensamiento lógico y creatividad aplicada.",
+      "image": "/assets/activities/robotica.jpg"
+    },
+    {
+      "slug": "deportes",
+      "title": "Deportes",
+      "summary": "Salud, trabajo en equipo y disciplina.",
+      "image": "/assets/activities/deportes.jpg"
+    }
+  ]
+}

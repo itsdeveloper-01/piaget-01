@@ -1,0 +1,13 @@
+# Dependencias y builds
+node_modules/
+.next/
+out/
+dist/
+build/
+.turbo/
+.vercel/
+coverage/
+*.log
+.DS_Store
+.env
+.env.*

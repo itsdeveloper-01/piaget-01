@@ -1,0 +1,26 @@
+{
+  "title": "Quiénes somos",
+  "subtitle": "Modelo Montessori con atención integral.",
+  "body1": "Somos una Institución comprometida con la sociedad para formar a nuestros alumnos de manera  integral, ya que sabemos son la esencia del mañana.",
+  "body2": "Nuestro objetivo es lograr que el estudiante adquiera el conocimiento en un ambiente preparado que le permita adquirir habilidades, conocimientos así como actitudes de una manera dinámica y de forma permanente",
+  "highlights": [
+    {
+      "key": "mision",
+      "title": "Misión",
+      "text": "Tenemos como objetivo el compromiso  con la excelencia académica de nuestros alumnos formados con los valores universales, responsables de su entorno y capaces de resolver por si mismos los retos que se les presenten",
+      "icon": "flag"
+    },
+    {
+      "key": "vision",
+      "title": "Visión",
+      "text": "Ser una institución reconocida por contar con profesionistas capacitados y comprometidos con los valores universales, con programas e instalaciones de vanguardia en un ambiente cálido y sano que favorece el aprendizaje integral",
+      "icon": "eye"
+    },
+    {
+      "key": "valores",
+      "title": "Valores",
+      "text": "Entregados ante la  promoción y practica de los valores universales en especial el respeto por uno mismo y los demás, la responsabilidad, honestidad, gratitud, humildad, lealtad y amistad para lograr con ello convivir en un ambiente de armonía",
+      "icon": "heart"
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root{--navbar-h:72px;} html,body{scroll-behavior:smooth; font-family:'Poppins', sans-serif; background:#F2F2F2;}
