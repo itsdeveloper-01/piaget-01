@@ -1,10 +1,11 @@
 import data from "@/content/activities/activities.json";
+import SectionTitle from "@/components/shared/SectionTitle";
 export default function Activities(){
   return (
     <section id="actividades" className="w-full px-4 sm:px-6 lg:px-8 py-16">
       <header className="mb-8">
-        <h2 className="text-2xl font-semibold tracking-tight">Otras actividades</h2>
-        <p className="text-gray-600">Idiomas, talleres y actividades extracurriculares.</p>
+        <SectionTitle>Otras actividades</SectionTitle>
+        <p className="subtitle-section">Idiomas, talleres y actividades extracurriculares.</p>
       </header>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {data.activities.map((it)=>(

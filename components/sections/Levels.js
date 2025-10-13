@@ -1,12 +1,13 @@
 import data from "@/content/levels/levels.json";
 import Link from "next/link";
+import SectionTitle from "@/components/shared/SectionTitle";
 
 export default function Levels(){
   return (
     <section id="niveles" className="w-full px-4 sm:px-6 lg:px-8 py-16">
       <header className="mb-8">
-        <h2 className="text-2xl font-semibold tracking-tight">Niveles escolares</h2>
-        <p className="text-gray-600">Modelo educativo Montessori desde Maternal hasta Preparatoria.</p>
+        <SectionTitle>Niveles escolares</SectionTitle>
+        <p className="subtitle-section">Modelo educativo Montessori desde Maternal hasta Preparatoria.</p>
       </header>
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
         {data.levels.map((lvl)=>(

@@ -1,17 +1,41 @@
 {
-  "title": "Lenguajes",
-  "sections": [
+  "title": "Quiénes somos",
+  "style": "fancy",
+  "cards": [
     {
-      "heading": "Sección 1",
-      "body": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer posuere."
+      "title": "1. ¿Quién fue María Montessori?",
+      "text": "María Montessori (1870-1952) fue una médica y pedagoga italiana pionera en la educación basada en la libertad, la observación y el respeto por el ritmo natural del niño. Su método surgió al observar que, cuando los niños tienen un entorno adecuado y son guiados con respeto, desarrollan autonomía, concentración y amor por el aprendizaje.",
+      "mediaSide": "left"
     },
     {
-      "heading": "Sección 2",
-      "body": "Praesent commodo cursus magna, vel scelerisque nisl consectetur et."
+      "title": "2. El Método Montessori — El niño",
+      "text": "El centro del aprendizaje es el propio niño. Cada uno avanza a su ritmo, eligiendo actividades que despiertan su curiosidad y fortalecen su independencia. La confianza en sí mismo se cultiva a través de la experiencia directa y el descubrimiento.",
+      "mediaSide": "right"
     },
     {
-      "heading": "Sección 3",
-      "body": "Donec sed odio dui. Aenean lacinia bibendum nulla sed consectetur."
+      "title": "2. El Método Montessori — El ambiente preparado",
+      "text": "El aula Montessori está organizada para fomentar la libertad y la responsabilidad. Todo tiene un propósito educativo: los materiales, el orden y la estética del espacio invitan al niño a explorar y aprender de manera autónoma.",
+      "mediaSide": "left"
+    },
+    {
+      "title": "2. El Método Montessori — Multigrado (Casa de Niños)",
+      "text": "En un mismo ambiente conviven niños de distintas edades, lo que promueve la cooperación, la empatía y el aprendizaje entre pares. Los mayores ayudan a los menores, fortaleciendo el sentido de comunidad.",
+      "mediaSide": "right"
+    },
+    {
+      "title": "2. El Método Montessori — La guía Montessori",
+      "text": "El adulto no impone, sino que observa, orienta y acompaña. Su papel es preparar el entorno y ofrecer apoyo cuando el niño lo necesita, favoreciendo el aprendizaje activo y la autodisciplina.",
+      "mediaSide": "left"
+    },
+    {
+      "title": "3. ¿Cómo viven los niños el método Montessori?",
+      "text": "Los niños en un ambiente Montessori se sienten valorados y seguros. Su día se construye entre el trabajo libre, el juego con propósito y momentos de convivencia. Aprenden a tomar decisiones, resolver conflictos y expresarse con respeto. La alegría, la concentración y la curiosidad son rasgos visibles de su vida diaria.",
+      "mediaSide": "right"
+    },
+    {
+      "title": "4. El impacto Montessori",
+      "text": "El método Montessori ha transformado la forma en que entendemos la educación. Niños educados bajo este enfoque desarrollan pensamiento crítico, independencia, empatía y amor por el conocimiento. Estas habilidades los preparan no solo para el éxito académico, sino también para la vida.",
+      "mediaSide": "left"
     }
   ]
 }

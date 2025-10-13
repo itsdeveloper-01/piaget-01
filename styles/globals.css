@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-:root{--navbar-h:72px;} html,body{scroll-behavior:smooth; font-family:'Poppins', sans-serif; background:#F2F2F2;}
+:root{--navbar-h:72px;}
+html,body{scroll-behavior:smooth; font-family:"Poppins", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif; background:#F2F2F2;}
+@layer components{
+  .title-section{@apply font-semibold tracking-tight text-2xl sm:text-3xl lg:text-4xl;}
+  .subtitle-section{@apply text-gray-600 text-base sm:text-lg;}
+}

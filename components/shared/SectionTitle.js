@@ -1,0 +1,1 @@
+export default function SectionTitle({children,className=""}){return(<h2 className={`title-section ${className}`}>{children}</h2>);}

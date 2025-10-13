@@ -1,3 +1,9 @@
-import LevelPage from "@/components/sections/LevelPage"; import data from "@/content/levels/maternal.json";
-export const metadata = { title: "Instituto Piaget — Maternal" };
-export default function Page(){ return <LevelPage data={data} />; }
+import dynamic from 'next/dynamic';
+
+const ComunidadInfantil = dynamic(() => import('@/components/sections/ComunidadInfantil'), { ssr: true });
+
+export const metadata = { title: 'Comunidad Infantil — Instituto Piaget' };
+
+export default function Page() {
+  return <ComunidadInfantil />;
+}

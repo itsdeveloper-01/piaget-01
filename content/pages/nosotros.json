@@ -1,26 +1,36 @@
 {
   "title": "Quiénes somos",
   "subtitle": "Modelo Montessori con atención integral.",
-  "body1": "Somos una Institución comprometida con la sociedad para formar a nuestros alumnos de manera  integral, ya que sabemos son la esencia del mañana.",
-  "body2": "Nuestro objetivo es lograr que el estudiante adquiera el conocimiento en un ambiente preparado que le permita adquirir habilidades, conocimientos así como actitudes de una manera dinámica y de forma permanente",
+  "body1": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nec leo vel felis pharetra fermentum.",
+  "body2": "Mauris congue, nisl at fringilla dignissim, risus nunc aliquet arcu, a pretium purus arcu a arcu.",
   "highlights": [
     {
       "key": "mision",
       "title": "Misión",
-      "text": "Tenemos como objetivo el compromiso  con la excelencia académica de nuestros alumnos formados con los valores universales, responsables de su entorno y capaces de resolver por si mismos los retos que se les presenten",
+      "text": "Compromiso con la excelencia académica y los valores universales.",
       "icon": "flag"
     },
     {
       "key": "vision",
       "title": "Visión",
-      "text": "Ser una institución reconocida por contar con profesionistas capacitados y comprometidos con los valores universales, con programas e instalaciones de vanguardia en un ambiente cálido y sano que favorece el aprendizaje integral",
+      "text": "Ser una institución reconocida por profesionales comprometidos y programas de vanguardia.",
       "icon": "eye"
     },
     {
       "key": "valores",
       "title": "Valores",
-      "text": "Entregados ante la  promoción y practica de los valores universales en especial el respeto por uno mismo y los demás, la responsabilidad, honestidad, gratitud, humildad, lealtad y amistad para lograr con ello convivir en un ambiente de armonía",
+      "text": "Respeto, honestidad, gratitud, humildad, lealtad y amistad para convivir en armonía.",
       "icon": "heart"
     }
-  ]
+  ],
+  "montessori": {
+    "heading": "Método Montessori",
+    "paragraphs": [
+      "Es una filosofía educativa que pone al niño en el centro del aprendizaje, fomentando su autonomía, curiosidad y amor por descubrir.",
+      "En un ambiente preparado y ordenado, los niños eligen libremente actividades que desarrollan sus habilidades cognitivas, emocionales y sociales.",
+      "La guía Montessori acompaña sin imponer, observando y orientando con respeto para que cada niño aprenda a su propio ritmo y construya su conocimiento a través de la experiencia."
+    ],
+    "buttonText": "Conoce más",
+    "buttonHref": "/quienes-somos"
+  }
 }

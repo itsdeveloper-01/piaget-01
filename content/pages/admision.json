@@ -1,0 +1,33 @@
+{
+  "title": "Proceso de Admisión",
+  "steps": [
+    {
+      "num": 1,
+      "title": "Registro",
+      "subtitle": "Idea",
+      "text": "Completa tu registro inicial con tus datos de contacto y el nivel educativo que deseas cursar.",
+      "img": "/icons/register.svg"
+    },
+    {
+      "num": 2,
+      "title": "Pasos de admisión",
+      "subtitle": "Collaboration",
+      "text": "Nuestro equipo te guiará: entrevista, requisitos y evaluación diagnóstica.",
+      "img": "/icons/interview.svg"
+    },
+    {
+      "num": 3,
+      "title": "Documentación",
+      "subtitle": "Planification",
+      "text": "Entrega los documentos requeridos de manera presencial o digital para completar tu expediente.",
+      "img": "/icons/documents.svg"
+    },
+    {
+      "num": 4,
+      "title": "Confirmación",
+      "subtitle": "Implementation",
+      "text": "Validamos la información y te notificamos la admisión junto con los pasos siguientes.",
+      "img": "/icons/check.svg"
+    }
+  ]
+}

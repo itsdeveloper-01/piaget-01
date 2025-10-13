@@ -1,46 +1,79 @@
+// components/Navbar.js
 "use client";
-import { useState } from "react";
-import Logo from "@/components/shared/Logo";
 import Link from "next/link";
+import Image from "next/image";
+import { useState, useEffect } from "react";
 
-export default function Navbar(){
-  const [open,setOpen]=useState(false);
+const links = [
+  { href: "/maternal", label: "Maternal" },
+  { href: "/kinder", label: "Kinder" },
+  { href: "/primaria", label: "Primaria" },
+  { href: "/secundaria", label: "Secundaria" },
+  { href: "/preparatoria", label: "Preparatoria" },
+  { href: "/quienes-somos", label: "Quiénes somos" },
+  { href: "/admision", label: "Admisión" },
+  { href: "/#contacto", label: "Contacto" },
+];
+
+export default function Navbar() {
+  const [open, setOpen] = useState(false);
+  const [onTop, setOnTop] = useState(true);
+
+  useEffect(() => {
+    const onScroll = () => setOnTop(window.scrollY < 4);
+    onScroll();
+    window.addEventListener("scroll", onScroll);
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
   return (
-    <header className="sticky top-0 z-50 bg-[#EBEBEB] backdrop-blur border-b border-gray-200 w-full">
-      <div className="w-full px-4 sm:px-6 lg:px-8 h-[var(--navbar-h)] flex items-center justify-between">
+    <header className={`sticky top-0 z-50 w-full border-b ${onTop ? "bg-[#EBEBEB]" : "bg-[#EBEBEB]/90 backdrop-blur"} `}>
+      <nav className="mx-auto flex max-w-[1600px] items-center justify-between px-4 sm:px-6 lg:px-8 h-14">
+        {/* LOGO */}
         <Link href="/" className="flex items-center gap-3">
-          <Logo className="w-9 h-9"/><span className="font-semibold tracking-tight">Instituto Piaget</span>
+          <Image
+            src="/assets/logo.png"
+            width={160}
+            height={44}
+            alt="Instituto Piaget"
+            className="h-10 w-auto"
+            priority
+          />
+          <span className="sr-only">Inicio</span>
         </Link>
-        <nav aria-label="Principal" className="hidden md:block w-auto">
-          <ul className="flex items-center gap-6 text-sm">
-            <li><Link href="/maternal" className="hover:text-brand-700">Maternal</Link></li>
-            <li><Link href="/kinder" className="hover:text-brand-700">Kinder</Link></li>
-            <li><Link href="/primaria" className="hover:text-brand-700">Primaria</Link></li>
-            <li><Link href="/secundaria" className="hover:text-brand-700">Secundaria</Link></li>
-            <li><Link href="/preparatoria" className="hover:text-brand-700">Preparatoria</Link></li>
-            <li><Link href="/menu1" className="hover:text-brand-700">Menú 1</Link></li>
-            <li><Link href="/menu2" className="hover:text-brand-700">Menú 2</Link></li>
-            <li><a href="/#contacto" className="hover:text-brand-700">Contacto</a></li>
-          </ul>
-        </nav>
-        <button aria-label="Abrir menú" onClick={()=>setOpen(!open)} className="md:hidden inline-flex items-center justify-center w-10 h-10 rounded-lg border hover:bg-gray-50">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth="2"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+
+        {/* Desktop links */}
+        <div className="hidden md:flex items-center gap-6 text-sm">
+          {links.map((l) => (
+            <Link key={l.href} href={l.href} className="hover:underline underline-offset-4">
+              {l.label}
+            </Link>
+          ))}
+        </div>
+
+        {/* Burger */}
+        <button
+          className="md:hidden inline-flex items-center justify-center rounded-md p-2"
+          aria-label="Abrir menú"
+          onClick={() => setOpen((v) => !v)}
+        >
+          <span className="i-lucide-menu" />
+          <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
         </button>
-      </div>
-      {open&&(
-        <div className="md:hidden border-t bg-white shadow-sm w-full">
-          <nav className="w-full px-4 py-3">
-            <ul className="grid gap-3 text-sm">
-              <li><Link href="/maternal" onClick={()=>setOpen(false)}>Maternal</Link></li>
-              <li><Link href="/kinder" onClick={()=>setOpen(false)}>Kinder</Link></li>
-              <li><Link href="/primaria" onClick={()=>setOpen(false)}>Primaria</Link></li>
-              <li><Link href="/secundaria" onClick={()=>setOpen(false)}>Secundaria</Link></li>
-              <li><Link href="/preparatoria" onClick={()=>setOpen(false)}>Preparatoria</Link></li>
-              <li><Link href="/menu1" onClick={()=>setOpen(false)}>Menú 1</Link></li>
-              <li><Link href="/menu2" onClick={()=>setOpen(false)}>Menú 2</Link></li>
-              <li><a href="/#contacto" onClick={()=>setOpen(false)}>Contacto</a></li>
-            </ul>
-          </nav>
+      </nav>
+
+      {/* Mobile panel */}
+      {open && (
+        <div className="md:hidden border-t bg-[#EBEBEB]">
+          <div className="mx-auto max-w-[1600px] px-4 sm:px-6 lg:px-8 py-3 flex flex-col gap-2">
+            {links.map((l) => (
+              <Link key={l.href} href={l.href} className="py-2" onClick={() => setOpen(false)}>
+                {l.label}
+              </Link>
+            ))}
+          </div>
         </div>
       )}
     </header>

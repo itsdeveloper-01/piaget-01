@@ -4,10 +4,10 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import FloatingButtons from "@/components/FloatingButtons";
 
-export default function RootLayout({ children }) {
+export default function RootLayout({ children }){
   return (
     <html lang="es">
-      <body className="bg-white text-gray-900">
+      <body className="text-gray-900">
         <div className="min-h-screen flex flex-col">
           <Navbar/>
           <main className="flex-1">{children}</main>

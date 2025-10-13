@@ -1,161 +1,72 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "public/uploads"
-public_folder: "/uploads"
+
 local_backend: true
 
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+
 collections:
-  - name: "settings"
-    label: "Ajustes del sitio"
+  - name: "pages"
+    label: "Páginas"
     files:
-      - file: "content/social/social.json"
-        name: "social"
-        label: "Redes sociales"
+      - name: "quienes_somos"
+        label: "Quiénes somos"
+        file: "content/pages/menu1.json"
         fields:
-          - label: "Cuentas"
-            name: "accounts"
-            widget: "list"
-            fields:
-              - {label: "Plataforma", name: "platform", widget: "string"}
-              - {label: "Usuario/Handle", name: "handle", widget: "string"}
-              - {label: "URL", name: "url", widget: "string"}
-          - label: "Recientes (demo)"
-            name: "recent"
-            widget: "list"
-            fields:
-              - {label: "Imagen", name: "image", widget: "image", required: false}
-              - {label: "Texto", name: "text", widget: "text"}
-              - {label: "Enlace", name: "link", widget: "string"}
-
-      - file: "content/levels/levels.json"
-        name: "levels_list"
-        label: "Listado de niveles (Home)"
-        fields:
-          - label: "Listado de niveles"
-            name: "levels"
-            widget: "list"
-            fields:
-              - {label: "Slug", name: "slug", widget: "string"}
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
-              - {label: "Enlace", name: "href", widget: "string"}
-
-      - file: "content/pages/nosotros.json"
-        name: "about"
-        label: "Sección — Quiénes somos"
-        fields:
-          - { label: "Título", name: "title", widget: "string" }
-          - { label: "Subtítulo", name: "subtitle", widget: "string", required: false }
-          - { label: "Párrafo 1", name: "body1", widget: "text" }
-          - { label: "Párrafo 2", name: "body2", widget: "text" }
-          - label: "Tarjetas (Misión / Visión / Valores)"
-            name: "highlights"
-            widget: "list"
-            fields:
-              - { label: "Clave",  name: "key",   widget: "string" }
-              - { label: "Título", name: "title", widget: "string" }
-              - { label: "Texto",  name: "text",  widget: "text" }
-              - label: "Icono"
-                name: "icon"
-                widget: "select"
-                options: ["flag", "eye", "heart"]
-
-      - file: "content/pages/menu1.json"
-        name: "menu1"
-        label: "Página — Lenguajes"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
+          - { name: "title", label: "Título", widget: "string" }
+          - { name: "style", label: "Estilo", widget: "select", options: ["default", "fancy"], required: false }
           - label: "Secciones"
             name: "sections"
             widget: "list"
+            required: false
             fields:
-              - {label: "Encabezado", name: "heading", widget: "string"}
-              - {label: "Cuerpo", name: "body", widget: "text"}
+              - { name: "heading", label: "Encabezado", widget: "string" }
+              - { name: "body", label: "Contenido", widget: "text" }
+          - label: "Cards (Quiénes somos)"
+            name: "cards"
+            widget: "list"
+            required: false
+            fields:
+              - { name: "title", label: "Título", widget: "string" }
+              - { name: "text", label: "Texto", widget: "text" }
+              - { name: "mediaSide", label: "Posición media", widget: "select", options: ["left", "right", "top"], required: false }
+              - { name: "image", label: "Imagen (opcional)", widget: "image", required: false }
+      - name: "admision"
+        label: "Admisión"
+        file: "content/pages/admision.json"
+        fields:
+          - { name: "title", label: "Título", widget: "string" }
+          - label: "Pasos"
+            name: "steps"
+            widget: "list"
+            fields:
+              - { name: "num", label: "Número", widget: "number" }
+              - { name: "title", label: "Título del paso", widget: "string" }
+              - { name: "subtitle", label: "Subtítulo", widget: "string", required: false }
+              - { name: "text", label: "Texto", widget: "text" }
+              - { name: "img", label: "Imagen/Icono", widget: "image", allow_multiple: false, required: false }
+              - { name: "reverse", label: "Invertir (imagen a la izquierda)", widget: "boolean", required: false }
 
-      - file: "content/pages/menu2.json"
-        name: "menu2"
-        label: "Página — Actividades extracurriculares"
+  - name: "levels"
+    label: "Niveles"
+    label_singular: "Nivel"
+    folder: "content/levels"
+    create: false
+    slug: "{{slug}}"
+    extension: "json"
+    format: "json"
+    fields:
+      - { name: "title", label: "Título", widget: "string" }
+      - { name: "heroImage", label: "Imagen principal", widget: "image", required: false }
+      - { name: "description", label: "Descripción", widget: "text" }
+      - label: "Actividades"
+        name: "activities"
+        widget: "list"
         fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - label: "Secciones"
-            name: "sections"
-            widget: "list"
-            fields:
-              - {label: "Encabezado", name: "heading", widget: "string"}
-              - {label: "Cuerpo", name: "body", widget: "text"}
-
-  - name: "levels_detail"
-    label: "Páginas de niveles"
-    files:
-      - file: "content/levels/maternal.json"
-        name: "maternal"
-        label: "Maternal"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Imagen héroe", name: "heroImage", widget: "image"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - label: "Actividades"
-            name: "activities"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
-      - file: "content/levels/kinder.json"
-        name: "kinder"
-        label: "Kinder"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Imagen héroe", name: "heroImage", widget: "image"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - label: "Actividades"
-            name: "activities"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
-      - file: "content/levels/primaria.json"
-        name: "primaria"
-        label: "Primaria"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Imagen héroe", name: "heroImage", widget: "image"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - label: "Actividades"
-            name: "activities"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
-      - file: "content/levels/secundaria.json"
-        name: "secundaria"
-        label: "Secundaria"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Imagen héroe", name: "heroImage", widget: "image"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - label: "Actividades"
-            name: "activities"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
-      - file: "content/levels/prepa.json"
-        name: "preparatoria"
-        label: "Preparatoria"
-        fields:
-          - {label: "Título", name: "title", widget: "string"}
-          - {label: "Imagen héroe", name: "heroImage", widget: "image"}
-          - {label: "Descripción", name: "description", widget: "text"}
-          - label: "Actividades"
-            name: "activities"
-            widget: "list"
-            fields:
-              - {label: "Título", name: "title", widget: "string"}
-              - {label: "Resumen", name: "summary", widget: "text"}
-              - {label: "Imagen", name: "image", widget: "image"}
+          - { name: "title", label: "Título", widget: "string" }
+          - { name: "text", label: "Texto", widget: "text" }
+          - { name: "icon", label: "Icono (opcional)", widget: "image", required: false }

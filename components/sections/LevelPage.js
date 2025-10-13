@@ -1,3 +1,4 @@
+import SectionTitle from "@/components/shared/SectionTitle";
 export default function LevelPage({ data }){
   return (
     <div>
@@ -5,11 +6,11 @@ export default function LevelPage({ data }){
         <img src={data.heroImage} alt={data.title} className="w-full h-full object-cover"/>
       </div>
       <section className="w-full px-4 sm:px-6 lg:px-8 py-12">
-        <h1 className="text-3xl font-semibold tracking-tight">{data.title}</h1>
+        <SectionTitle className="!text-3xl sm:!text-4xl lg:!text-5xl">{data.title}</SectionTitle>
         <p className="mt-4 text-gray-700">{data.description}</p>
       </section>
       <section className="w-full px-4 sm:px-6 lg:px-8 pb-12">
-        <h2 className="text-xl font-semibold tracking-tight mb-6">Actividades</h2>
+        <SectionTitle className="!text-2xl sm:!text-3xl mb-6">Actividades</SectionTitle>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
           {data.activities.map((it,idx)=>(
             <article key={idx} className="rounded-2xl overflow-hidden border shadow-sm hover:shadow-md transition">
@@ -24,7 +25,7 @@ export default function LevelPage({ data }){
       </section>
       <section id="contacto" className="w-full px-4 sm:px-6 lg:px-8 pb-16">
         <div className="rounded-2xl border p-6 bg-white">
-          <h2 className="text-xl font-semibold tracking-tight mb-3">Contáctanos</h2>
+          <h2 className="title-section !text-xl sm:!text-2xl mb-3">Contáctanos</h2>
           <p className="text-gray-700 mb-6">¿Tienes dudas sobre {data.title}? Escríbenos.</p>
           <a href="mailto:demo@piaget.edu.mx" className="inline-block px-5 py-3 rounded-lg bg-brand-600 text-white hover:bg-brand-700">Enviar correo</a>
         </div>

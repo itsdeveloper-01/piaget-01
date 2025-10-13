@@ -1,10 +1,11 @@
 import socialConfig from "@/content/social/social.json";
+import SectionTitle from "@/components/shared/SectionTitle";
 export default function Social(){
   return (
     <section id="social" className="w-full px-4 sm:px-6 lg:px-8 py-16">
       <header className="mb-8">
-        <h2 className="text-2xl font-semibold tracking-tight">Redes sociales</h2>
-        <p className="text-gray-600">Se actualizan agregando las cuentas en el CMS. Demo con últimas imágenes/estados.</p>
+        <SectionTitle>Redes sociales</SectionTitle>
+        <p className="subtitle-section">Se actualizan agregando las cuentas en el CMS. Demo con últimas imágenes/estados.</p>
       </header>
       <div className="flex flex-wrap gap-3 mb-6">
         {socialConfig.accounts.map(a=> (
