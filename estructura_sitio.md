@@ -28,7 +28,7 @@
 ## public/
 - `assets/logo.png` – Reemplázalo por tu logo real
 - `assets/hero.mp4` – Video del hero
-- `assets/nivel.jpg` – Imagen por defecto para niveles
+- `assets/nivel.png` – Imagen por defecto para niveles
 - `admin/` – Decap CMS (`index.html`, `config.yml`)
 
 ---

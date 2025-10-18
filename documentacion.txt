@@ -1,1 +1,21 @@
-Se agregó SectionTitle y clases globales para títulos.
+DOCUMENTACIÓN DEL PROYECTO — INSTITUTO PIAGET (Next.js + Tailwind + Decap CMS)
+
+Estructura:
+- app/: rutas (Home, Maternal, Quienes somos)
+- components/: Navbar, Footer, FloatingButtons, LevelsSection
+- content/: JSONs editables por el CMS (niveles, maternal)
+- public/images/: imágenes (niveles, logos, banner)
+- styles/globals.css: Tailwind + tipografía Poppins + colores base
+- admin/: Decap CMS (si lo usas en este repo)
+
+Comandos:
+- npm run dev       -> desarrollo
+- npm run build     -> genera .next y exporta estático (out/)
+- npm start         -> modo server (si quitas 'output: export')
+- npm run cms:serve -> Decap local (si usas backend local)
+
+Notas:
+- Banners recomendados: 1920x500px (JPG/WebP). Cards: 1200x900 o 800x600 (JPG/WebP).
+- Tipografía global: Poppins | Fondo general #F2F2F2 | Navbar #EBEBEB.
+- Home: grid de niveles con 3 columnas (desktop). Imágenes con object-cover.
+- Maternal: título "Comunidad Infantil", banner como imagen y contenido por secciones.

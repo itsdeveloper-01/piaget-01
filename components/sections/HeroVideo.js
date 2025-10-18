@@ -7,7 +7,7 @@ export default function HeroVideo(){
   useEffect(()=>{const v=vidRef.current; if(v) v.play().catch(()=>{});},[]);
   return (
     <section aria-label="Video principal" className="relative bg-black">
-      <video ref={vidRef} className="w-full h-[70vh] sm:h-[80vh] object-cover" poster="/assets/hero-poster.jpg" playsInline muted loop preload="metadata">
+      <video ref={vidRef} className="w-full h-[70vh] sm:h-[80vh] object-cover" poster="/assets/hero-poster.png" playsInline muted loop preload="metadata">
         <source src="/assets/hero.mp4" type="video/mp4"/>
       </video>
       <div className="pointer-events-none absolute inset-0 flex items-end justify-end p-4 sm:p-6">

@@ -4,35 +4,35 @@
       "slug": "maternal",
       "title": "Maternal",
       "summary": "Acompañamiento temprano con enfoque Montessori.",
-      "image": "/assets/levels/maternal.jpg",
+      "image": "/assets/levels/maternal.png",
       "href": "/maternal"
     },
     {
       "slug": "kinder",
       "title": "Kinder",
       "summary": "Desarrollo sensorial y autonomía.",
-      "image": "/assets/levels/kinder.jpg",
+      "image": "/assets/levels/kinder.png",
       "href": "/kinder"
     },
     {
       "slug": "primaria",
       "title": "Primaria",
       "summary": "Fundamentos académicos y habilidades socioemocionales.",
-      "image": "/assets/levels/primaria.jpg",
+      "image": "/assets/levels/primaria.png",
       "href": "/primaria"
     },
     {
       "slug": "secundaria",
       "title": "Secundaria",
       "summary": "Pensamiento crítico y proyectos colaborativos.",
-      "image": "/assets/levels/secundaria.jpg",
+      "image": "/assets/levels/secundaria.png",
       "href": "/secundaria"
     },
     {
       "slug": "preparatoria",
       "title": "Preparatoria",
       "summary": "Preparación para la universidad con enfoque humano.",
-      "image": "/assets/levels/prepa.jpg",
+      "image": "/assets/levels/prepa.png",
       "href": "/preparatoria"
     }
   ]

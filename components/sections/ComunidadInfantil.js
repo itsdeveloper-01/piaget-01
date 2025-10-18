@@ -10,25 +10,16 @@ export default function ComunidadInfantil() {
 
   return (
     <main className="min-h-screen">
-      {/* Hero / Imagen */}
-<section className="relative w-full h-[380px] md:h-[460px] overflow-hidden">
-  <img
-    src={heroImage}
-    alt={title}
-    className="w-full h-full object-cover"
-  />
-</section>
-
-{/* Título y subtítulo */}
-<section className="bg-white text-center py-10 px-4">
-  <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-3">
-    {title}
-  </h1>
-  <p className="text-gray-700 text-lg max-w-2xl mx-auto">
-    {subtitle}
-  </p>
-</section>
-
+      {/* Hero / Título */}
+      <section className="relative overflow-hidden bg-gradient-to-r from-pink-50 to-blue-50">
+        <div className="absolute inset-0">
+          <img src={heroImage} alt={title} className="w-full h-full object-cover opacity-20" />
+        </div>
+        <div className="relative max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-16 text-center">
+          <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-3">{title}</h1>
+          <p className="text-gray-700">{subtitle}</p>
+        </div>
+      </section>
 
       {/* Edad + Intro */}
       <section className="bg-white">

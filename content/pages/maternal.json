@@ -1,58 +1,26 @@
 {
   "title": "Comunidad Infantil",
   "subtitle": "Acompañamos con amor y respeto el desarrollo de los más pequeños.",
+  "heroImage": "/images/maternal.png",
   "ageRange": "Edad: 1.8 a 3 años",
   "worksIntro": "En esta etapa, los niños trabajan:",
   "works": [
-    {
-      "title": "Vida práctica",
-      "text": "Habilidades cotidianas como vestirse y cuidar el entorno para fomentar la coordinación.",
-      "icon": "🧺"
-    },
-    {
-      "title": "Psico-sensorial",
-      "text": "Reconocimiento de formas, tamaños, texturas y colores para potenciar la percepción y el razonamiento.",
-      "icon": "🎨"
-    },
-    {
-      "title": "Lenguaje",
-      "text": "Enriquecimiento del vocabulario e inicio de la comunicación oral.",
-      "icon": "🗣️"
-    },
-    {
-      "title": "Inglés",
-      "text": "Sistema bilingüe.",
-      "icon": "🇬🇧"
-    },
-    {
-      "title": "Clase de canto en inglés",
-      "text": "Expresión musical y pronunciación en un ambiente lúdico.",
-      "icon": "🎵"
-    },
-    {
-      "title": "Arte",
-      "text": "Creatividad y sensibilidad estética con materiales adecuados.",
-      "icon": "🖌️"
-    }
+    {"title": "Vida práctica", "text": "Habilidades cotidianas como vestirse y cuidar el entorno para fomentar la coordinación.", "icon": "🧺"},
+    {"title": "Psico-sensorial", "text": "Reconocimiento de formas, tamaños, texturas y colores para potenciar la percepción y el razonamiento.", "icon": "🎨"},
+    {"title": "Lenguaje", "text": "Enriquecimiento del vocabulario e inicio de la comunicación oral.", "icon": "🗣️"},
+    {"title": "Inglés", "text": "Sistema bilingüe.", "icon": "🇬🇧"},
+    {"title": "Clase de canto en inglés", "text": "Expresión musical y pronunciación en un ambiente lúdico.", "icon": "🎵"},
+    {"title": "Arte", "text": "Creatividad y sensibilidad estética con materiales adecuados.", "icon": "🖌️"}
   ],
   "achievementsTitle": "¿Qué logrará tu pequeño/a?",
   "achievementsText": "Control de esfínteres a su ritmo, socialización, independencia, concentración sostenida, desarrollo de lenguaje, autoestima, autocontrol e internalización de reglas.",
   "valuesTitle": "Valores a resaltar",
-  "values": [
-    "Autonomía",
-    "Respeto",
-    "Amor",
-    "Desarrollo Emocional"
-  ],
+  "values": ["Autonomía", "Respeto", "Amor", "Desarrollo Emocional"],
   "programTitle": "Programa “Adiós Pañal”",
-  "programAltTitles": [
-    "Bye Bye Pañal",
-    "Sin Pañal"
-  ],
+  "programAltTitles": ["Bye Bye Pañal", "Sin Pañal"],
   "scheduleTitle": "Horarios sin costo adicional",
   "schedule": [
     "Comunidad Infantil: 9:00 a.m. – 1:00 p.m. (Lunes a Viernes)",
     "Early Access: 6:50 a.m. – 8:30 a.m."
-  ],
-  "heroImage": "/images/hero-maternal.png"
+  ]
 }

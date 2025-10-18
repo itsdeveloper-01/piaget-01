@@ -1,22 +1,22 @@
 {
   "title": "Maternal",
-  "heroImage": "/assets/levels/maternal.jpg",
+  "heroImage": "/assets/levels/maternal.png",
   "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
   "activities": [
     {
       "title": "Actividad 1",
       "summary": "Lorem ipsum dolor sit amet.",
-      "image": "/assets/activities/musica.jpg"
+      "image": "/assets/activities/musica.png"
     },
     {
       "title": "Actividad 2",
       "summary": "Consectetur adipiscing elit.",
-      "image": "/assets/activities/robotica.jpg"
+      "image": "/assets/activities/robotica.png"
     },
     {
       "title": "Actividad 3",
       "summary": "Sed do eiusmod tempor.",
-      "image": "/assets/activities/deportes.jpg"
+      "image": "/assets/activities/deportes.png"
     }
   ]
 }
