@@ -10,7 +10,7 @@ export default function InfoPage({ data }){
     {(data?.style === 'fancy' || (data?.cards?.length ?? 0) > 0) && (
       <section className="w-full px-4 sm:px-6 lg:px-8 pb-12 space-y-10">
         {(data?.cards || []).map((c, idx) => (
-          <FancyCard key={idx} title={c.title} text={c.text} buttonText={c.buttonText} buttonHref={c.buttonHref} mediaSide={c.mediaSide || 'top'} imageUrl={c.imageUrl} />
+          <FancyCard key={idx} title={c.title} text={c.text} buttonText={c.buttonText} buttonHref={c.buttonHref} mediaSide={c.mediaSide || 'top'} imageUrl={c.image} />
         ))}
       </section>
     )}

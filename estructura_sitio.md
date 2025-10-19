@@ -10,8 +10,8 @@
 ## app/
 - `layout.js` – Layout global + Navbar
 - `page.js` – Home con `<HeroVideo />` y botones glass
-- `(niveles)/[nivel]/page.js` – Página dinámica por nivel; lee JSON en `content/levels/{nivel}.json`
-- `quienes-somos/page.js` – Renderiza `InfoPage` con `menu1.json` (sin contacto final)
+- `{maternal,kinder,primaria,secundaria,preparatoria}/page.js` – Páginas por nivel; leen JSON desde `content/levels/{nivel}.json`
+- `quienes-somos/page.js` – Renderiza `InfoPage` con `menu1.json`
 - `admision/page.js` – Formulario por pasos (registro, pasos, documentación, confirmación)
 
 ## components/

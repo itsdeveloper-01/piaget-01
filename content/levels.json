@@ -1,7 +1,0 @@
-[
-  {"slug": "maternal", "title": "Comunidad Infantil", "excerpt": "Acompañamiento temprano con enfoque Montessori.", "image": "/images/maternal.png"},
-  {"slug": "kinder", "title": "Kinder", "excerpt": "Desarrollo sensorial y autonomía.", "image": "/images/kinder.png"},
-  {"slug": "primaria", "title": "Primaria", "excerpt": "Fundamentos académicos y habilidades socioemocionales.", "image": "/images/primaria.png"},
-  {"slug": "secundaria", "title": "Secundaria", "excerpt": "Pensamiento crítico y proyectos colaborativos.", "image": "/images/secundaria.png"},
-  {"slug": "preparatoria", "title": "Preparatoria", "excerpt": "Preparación para la universidad con enfoque humano.", "image": "/images/preparatoria.png"}
-]

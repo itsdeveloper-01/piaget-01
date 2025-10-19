@@ -1,22 +1,13 @@
 {
-  "activities": [
-    {
-      "slug": "musica",
-      "title": "Música",
-      "summary": "Desarrollo rítmico y expresión artística.",
-      "image": "/assets/activities/musica.png"
-    },
-    {
-      "slug": "robotica",
-      "title": "Robótica",
-      "summary": "Pensamiento lógico y creatividad aplicada.",
-      "image": "/assets/activities/robotica.png"
-    },
-    {
-      "slug": "deportes",
-      "title": "Deportes",
-      "summary": "Salud, trabajo en equipo y disciplina.",
-      "image": "/assets/activities/deportes.png"
-    }
+  "items": [
+    { "title": "Francés",      "text": "Comprensión y conversación básica a través de juegos y canciones.", "image": "/assets/talleres/frances.png" },
+    { "title": "Porristas",    "text": "Trabajo en equipo, coordinación y ritmo con rutinas divertidas.",   "image": "/assets/talleres/porristas.png" },
+    { "title": "Fútbol",       "text": "Técnica, disciplina y valores en la cancha.",                       "image": "/assets/talleres/futbol.png" },
+    { "title": "Matemáticas",  "text": "Pensamiento lógico: conceptos y retos.",                            "image": "/assets/talleres/matematicas.png" },
+    { "title": "Teatro",       "text": "Expresión corporal y confianza a través de la actuación.",          "image": "/assets/talleres/teatro.png" },
+    { "title": "Ajedrez",      "text": "Estrategia, concentración y toma de decisiones.",                   "image": "/assets/talleres/ajedrez.png" },
+    { "title": "Estimulación", "text": "Desarrollo temprano de habilidades sensoriales y motoras.",         "image": "/assets/talleres/estimulacion.png" },
+    { "title": "Creatividad",  "text": "Exploración artística y pensamiento creativo.",                      "image": "/assets/talleres/creatividad.png" },
+    { "title": "Fotografía",   "text": "Composición, luz e historia visual para principiantes.",            "image": "/assets/talleres/fotografia.png" }
   ]
 }

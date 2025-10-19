@@ -35,6 +35,7 @@ collections:
               - { name: "text", label: "Texto", widget: "text" }
               - { name: "mediaSide", label: "Posición media", widget: "select", options: ["left", "right", "top"], required: false }
               - { name: "image", label: "Imagen (opcional)", widget: "image", required: false }
+
       - name: "admision"
         label: "Admisión"
         file: "content/pages/admision.json"
@@ -70,3 +71,20 @@ collections:
           - { name: "title", label: "Título", widget: "string" }
           - { name: "text", label: "Texto", widget: "text" }
           - { name: "icon", label: "Icono (opcional)", widget: "image", required: false }
+
+  # NUEVO: colección para TALLERES (se edita un solo archivo con una lista de items)
+  - name: "talleres"
+    label: "Talleres"
+    files:
+      - name: "lista"
+        label: "Listado de talleres"
+        file: "content/activities/activities.json"
+        fields:
+          - label: "Talleres"
+            name: "items"
+            widget: "list"
+            summary: "{{fields.title}}"
+            fields:
+              - { name: "title", label: "Título", widget: "string" }
+              - { name: "text", label: "Descripción", widget: "text", required: false }
+              - { name: "image", label: "Imagen", widget: "image", allow_multiple: false }

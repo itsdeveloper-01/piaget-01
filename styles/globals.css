@@ -8,3 +8,28 @@ html,body{scroll-behavior:smooth; font-family:"Poppins", system-ui, -apple-syste
   .title-section{@apply font-semibold tracking-tight text-2xl sm:text-3xl lg:text-4xl;}
   .subtitle-section{@apply text-gray-600 text-base sm:text-lg;}
 }
+
+/* === Marquee utilities === */
+@layer utilities {
+  @keyframes marquee-left {
+    0%   { transform: translateX(0); }
+    100% { transform: translateX(-50%); } /* recorre medio “track” duplicado */
+  }
+
+  .marquee-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .marquee-track {
+    display: flex;
+    gap: 1rem;                 /* separaciones entre cards */
+    width: 200%;               /* duplicamos los ítems */
+    animation: marquee-left 38s linear infinite; /* velocidad lenta */
+  }
+
+  /* Pausa al pasar el mouse */
+  .marquee-paused:hover .marquee-track {
+    animation-play-state: paused;
+  }
+}

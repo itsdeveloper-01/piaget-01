@@ -1,9 +1,9 @@
 DOCUMENTACIÓN DEL PROYECTO — INSTITUTO PIAGET (Next.js + Tailwind + Decap CMS)
 
 Estructura:
-- app/: rutas (Home, Maternal, Quienes somos)
-- components/: Navbar, Footer, FloatingButtons, LevelsSection
-- content/: JSONs editables por el CMS (niveles, maternal)
+- app/: rutas (Home, Maternal, Quienes somos, niveles individuales)
+- components/: Navbar, Footer, FloatingButtons y secciones reutilizables (HeroVideo, About, Levels, Activities, Social, Contact, InfoPage, LevelPage, AdmissionSteps)
+- content/: JSONs editables por el CMS (niveles, maternal, páginas)
 - public/images/: imágenes (niveles, logos, banner)
 - styles/globals.css: Tailwind + tipografía Poppins + colores base
 - admin/: Decap CMS (si lo usas en este repo)
@@ -17,5 +17,5 @@ Comandos:
 Notas:
 - Banners recomendados: 1920x500px (JPG/WebP). Cards: 1200x900 o 800x600 (JPG/WebP).
 - Tipografía global: Poppins | Fondo general #F2F2F2 | Navbar #EBEBEB.
-- Home: grid de niveles con 3 columnas (desktop). Imágenes con object-cover.
+- Home: muestra HeroVideo + About + Levels + Activities + Social + Contact.
 - Maternal: título "Comunidad Infantil", banner como imagen y contenido por secciones.

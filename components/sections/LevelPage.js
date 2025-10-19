@@ -11,7 +11,7 @@ export default function LevelPage({ data }){
       </section>
       <section className="w-full px-4 sm:px-6 lg:px-8 pb-12">
         <SectionTitle className="!text-2xl sm:!text-3xl mb-6">Actividades</SectionTitle>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {data.activities.map((it,idx)=>(
             <article key={idx} className="rounded-2xl overflow-hidden border shadow-sm hover:shadow-md transition">
               <img src={it.image} alt={it.title} className="w-full h-40 object-cover" loading="lazy"/>
